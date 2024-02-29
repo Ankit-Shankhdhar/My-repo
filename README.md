@@ -1,0 +1,13 @@
+graph TD;
+    A[User Registration] --> B{Donor or Charitable Organization?};
+    B --> |Donor| C[Create Food Donation Listing];
+    C --> D[View Listings by Charitable Organizations];
+    D --> E{Request Donation};
+    E --> |Yes| F[Confirmation by Donor];
+    F --> G[Contact Information Shared];
+    E --> |No| D;
+    B --> |Charitable Organization| H[Browse Available Donations];
+    H --> I{Request Specific Donation};
+    I --> |Yes| J[Donation Confirmation];
+    J --> K[Contact Information Shared];
+    I --> |No| H;
